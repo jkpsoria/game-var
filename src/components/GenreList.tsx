@@ -4,8 +4,10 @@ import getCroppedImageUrl from "../services/img-url";
 import GenreListSkeleton from "./GenreListSkeleton";
 
 const GenreList = () => {
-  const { data, isLoading } = useGenres();
+  const { data, isLoading, error } = useGenres();
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  if (error) return <Text color="red.500">Something went wrong.</Text>;
 
   return (
     <List>
