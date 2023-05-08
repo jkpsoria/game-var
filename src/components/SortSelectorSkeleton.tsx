@@ -1,5 +1,5 @@
 import { Button, Menu, MenuButton, Skeleton } from "@chakra-ui/react";
-import React from "react";
+
 import { BsChevronDown } from "react-icons/bs";
 
 const SortSelectorSkeleton = () => {
