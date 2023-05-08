@@ -1,5 +1,7 @@
 import { Menu, MenuButton, Button, MenuList, MenuItem } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
+import usePlatforms from "../hooks/usePlatforms";
+import SortSelectorSkeleton from "./SortSelectorSkeleton";
 
 interface Props {
   onSelectSortOrder: (sortOrder: string) => void;
@@ -7,6 +9,10 @@ interface Props {
 }
 
 const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
+  const { isLoading } = usePlatforms();
+
+  if (isLoading) return <SortSelectorSkeleton />;
+
   const sortOrders = [
     { value: "", label: "Relevance" },
     { value: "-added", label: "Date added" },

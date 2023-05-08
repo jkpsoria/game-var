@@ -4,7 +4,14 @@ import { BsChevronDown } from "react-icons/bs";
 
 const SortSelectorSkeleton = () => {
   return (
-    <Skeleton>
+    <Skeleton
+      as={Button}
+      rightIcon={<BsChevronDown />}
+      marginBottom={5}
+      marginTop={15}
+      marginLeft={5}
+      width={200}
+    >
       <Menu>
         <MenuButton as={Button} rightIcon={<BsChevronDown />}>
           Order by Relevance
