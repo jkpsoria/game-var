@@ -10,6 +10,7 @@ const PlatformSelectorSkeleton = () => {
       marginBottom={5}
       borderRadius={5}
       marginTop={15}
+      marginLeft={4}
     >
       <Menu>
         <MenuButton>Platforms</MenuButton>
