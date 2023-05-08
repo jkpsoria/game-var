@@ -9,6 +9,7 @@ const PlatformSelectorSkeleton = () => {
       rightIcon={<BsChevronDown />}
       marginBottom={5}
       borderRadius={5}
+      marginTop={15}
     >
       <Menu>
         <MenuButton>Platforms</MenuButton>
