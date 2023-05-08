@@ -1,14 +1,6 @@
-import {
-  Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Skeleton,
-} from "@chakra-ui/react";
-import React from "react";
+import { Button, Menu, MenuButton, Skeleton } from "@chakra-ui/react";
+
 import { BsChevronDown } from "react-icons/bs";
-import usePlatforms from "../hooks/usePlatforms";
 
 const PlatformSelectorSkeleton = () => {
   return (
